@@ -26,14 +26,6 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Run 1
-        run: echo 'for i in {1..9000}' > test.sh
-      - name: Run 2
-        run: echo 'do' >> test.sh
-      - name: Run 3
-        run: echo 'echo "Command no. $i"' >> test.sh
-      - name: Run 4
-        run: echo 'done' >> test.sh
-      - name: Run 5
         run: sh test.sh 
         
           
